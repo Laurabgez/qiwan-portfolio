@@ -1,0 +1,44 @@
+@use "../variables"
+
+.header
+  background-color: variables.$color-white
+  .header__box
+    display: grid
+    grid-template-columns: 1fr 10rem
+    grid-template-rows: 1fr
+    justify-content: space-between
+    align-items: center
+    .downloadcv
+      grid-column: 2 / 3
+      grid-row: 1 / 2
+      background-color: variables.$color-yellow
+    .download__box
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: variables.$color-white
+      width: 100%
+      border-bottom-left-radius: variables.$big-radius
+    .download__link
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0
+      transition: 0.5s
+      &:hover
+        transform: scale(1.05)
+    .logo
+      padding-left: variables.$size-xxl
+      padding-top: variables.$size-s
+      background-color: variables.$color-yellow
+      height: 100%
+      border-top-right-radius: variables.$big-radius
+      border-top-left-radius: variables.$big-radius
+.img__download
+  width: variables.$size-l
+  height: variables.$size-l
+.download__text
+  font-size: variables.$size-xl
+  padding-left: 1rem
+.no-mobile
+  display: none

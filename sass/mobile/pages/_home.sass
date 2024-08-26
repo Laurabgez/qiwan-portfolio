@@ -1,0 +1,370 @@
+@use"../../variables"
+@use"../../animation"
+//hero
+.hero
+  background-color: variables.$color-yellow
+  height: 90vh
+  border-bottom-left-radius: variables.$big-radius
+  border-bottom-right-radius: variables.$big-radius
+  border-top-right-radius: variables.$big-radius
+  position: relative
+  & > .container
+    display: grid
+    grid-template-rows: 1fr 10rem
+    grid-template-columns: 1fr
+    bottom: 0
+    left: 0
+    right: 0
+    padding-bottom: 0
+    height: 97.82%
+    position: relative
+    .hero__img
+      grid-column: 1 / 2
+      grid-row: 2 / 3
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+    .hero__content
+      grid-column: 1/ 2
+      grid-row: 1 / 2
+.img__profile
+  width: 15rem
+.welcome
+  font-size: variables.$size-l
+  color: variables.$color-white
+  text-align: center
+.hero__title
+  font-size: 2.5rem
+  text-align: center
+  margin-top: variables.$size-s
+  color: variables.$color-black
+.buttons
+  display: grid
+  gap: variables.$size-s
+  grid-template-columns: repeat( 4 , 1fr)
+  grid-template-rows: repeat(2 , 1fr)
+  height: 20vh
+  .button-1
+    grid-column: 1 / 3
+    grid-row: 1 / 2
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: variables.$size-s
+    padding-inline: .5rem
+    padding-block: .5rem
+    background-color: variables.$color-yellow
+    border: 2px solid variables.$color-black
+    border-radius: variables.$size-xxl
+  .button-2
+    grid-column: 3 / 5
+    grid-row: 1/ 2
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: variables.$size-s
+    padding-inline: variables.$size-s
+    padding-block: variables.$size-s
+    background-color: variables.$color-yellow
+    border: 2px solid variables.$color-black
+    border-radius: variables.$size-xxl
+  .button-3
+    grid-column: 2 / 4
+    grid-row: 2 / 3
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: variables.$size-s
+    padding-inline: variables.$size-s
+    padding-block: variables.$size-s
+    background-color: variables.$color-yellow
+    border: 2px solid variables.$color-black
+    border-radius: variables.$size-xxl
+
+//Web desing
+.web-desing
+  margin-top: 4rem
+  .web__desing-title
+    text-align: center
+  .web__text
+    line-height: 1.5
+    font-size: variables.$size-m
+.circle
+  width: 1rem
+  height: 1rem
+  background-color: #ADB5BD
+  border-radius: variables.$size-l
+  margin-inline: auto
+.responsive
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: 7rem 1fr 1fr
+  gap: variables.$size-s
+  .responsive__box
+    background-color: variables.$color-black
+    grid-row: 1 / 2
+    padding-block: variables.$size-s
+    border-radius: variables.$size-xl
+    display: flex
+    justify-content: center
+    align-items: center
+    .responsive__title
+      font-size: variables.$size-l
+      color: variables.$color-white
+      margin-block: variables.$size-s
+      text-align: center
+      font-weight: bolder
+  .responsive__title-text
+    color: variables.$color-white
+    text-align: center
+  .yellow
+    background-color: variables.$color-lightyellow
+    grid-row: 2 / 3
+    border-radius: variables.$size-xxl
+  .dark_gray
+    background-color: variables.$color-darkgrey
+    grid-row: 3 / 4
+    align-content: center
+    border-radius: variables.$size-xxl
+  .video_responsive1
+    border-radius: variables.$size-xxl
+  .video_responsive2
+    border-radius: variables.$size-xxl
+
+//dinamic
+.dinamic__desing
+  background-color: variables.$color-yellow
+  margin-top: 5rem
+  border-radius: variables.$size-xxl
+  height: 93vh
+  .dinamic__title
+    font-weight: bolder
+    font-size: variables.$size-l
+    text-align: center
+  .dinamic__content
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: repeat( 2, 1fr)
+    gap: variables.$size-s
+    .dinamic__post1
+      grid-row: 1 / 2
+      border-radius: variables.$size-xxl
+    .dinamic__post2
+      grid-row: 2 / 3
+      border-radius: variables.$size-xxl
+.video_dinamic
+  min-height: 12rem
+  border-radius: variables.$size-xl
+.dinamic__text
+  font-size: variables.$size-m
+  font-family: variables.$font-text
+
+
+//web proyects
+.web__proyects
+  margin-top: 5rem
+  .web__title
+    font-size: variables.$size-l
+    color: variables.$color-white
+    margin-block: variables.$size-s
+    text-align: center
+    font-weight: bolder
+    background-color: variables.$color-black
+    padding-block: variables.$size-xl
+    border-radius: variables.$size-xl
+  .masonry
+    display: grid
+    grid-template-columns: repeat( 6, 1fr)
+    grid-template-rows: auto
+    height: auto
+    gap: variables.$size-s
+    .masonry-1
+      grid-column: 1 / 4
+      grid-row: 1 / 3
+    .masonry-2
+      grid-column: 1 / 4
+      grid-row: 3/ 5
+    .masonry-3
+      grid-column: 4 / 7
+      grid-row: 1 / 5
+      border-radius: variables.$size-xl
+      height: 100%
+    .masonry-4
+      grid-column: 1 / 4
+      grid-row: 5 / 8
+      object-position: center
+    .masonry-5
+      grid-column: 4 / 7
+      grid-row: 5 / 8
+    .masonry-6
+      grid-column: 1 / 7
+      grid-row: 8 / 11
+  .masonry__item
+    min-height: 10rem
+    border-radius: variables.$size-xl
+
+//cta
+.cta__box
+  margin-top: 5rem
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-content: center
+  margin-inline: auto
+  text-align: center
+.cta__text
+  font-size: variables.$size-l
+  background-color: variables.$color-black
+  color: variables.$color-white
+  padding-block: variables.$size-m
+  padding-inline: 1rem
+  border-top-left-radius: variables.$size-xxl
+  border-top-right-radius: variables.$size-xxl
+  line-height: 1.5
+  margin: 0
+.button__cta
+  border-bottom-left-radius: variables.$size-xxl
+  border-bottom-right-radius: variables.$size-xxl
+  border-top-left-radius: initial
+  border-top-right-radius: initial
+  padding-block: variables.$size-xl
+  padding-inline: variables.$size-xl
+  font-size: variables.$size-m
+.cta__text-button
+  display: inline-block
+  animation-name: ani-cta
+  animation-duration: 0.5s
+  animation-timing-function: linear
+  animation-iteration-count: infinite
+  animation-direction: alternate-reverse
+
+//graphic
+.graphic__desing
+  margin-top: 4rem
+  .graphic__title
+    text-align: center
+  .graphic__text
+    line-height: 2
+    font-size: variables.$size-m
+  .masonry__graphic
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto
+    gap: variables.$size-s
+    .graphic__item1
+      grid-column: 1 / 3
+      grid-row: 1 / 5
+      .text__graphic-item1
+        display: none
+    .graphic__item2
+      grid-column: 1 / 3
+      grid-row: 5 / 8
+      .text__graphic-item2
+        display: none
+    .graphic__item3
+      grid-column: 1 / 2
+      grid-row: 8 / 10
+      .text__graphic-item3
+        display: none
+    .graphic__item4
+      grid-column: 1 / 3
+      grid-row: 10  / 12
+      .text__graphic-item4
+        display: none
+    .graphic__item5
+      grid-column: 2 / 3
+      grid-row: 8 / 10
+      height: 100%
+      .text__graphic-item5
+        display: none
+    .graphic__item6
+      grid-column: 1 / 3
+      grid-row: 12 / 16
+      .text__graphic-item6
+        display: none
+    .img-graphic
+      border-radius: variables.$size-xxl
+
+//contact
+.circle__contact
+  width: 1rem
+  height: 1rem
+  border-radius: variables.$size-l
+  background-color: variables.$color-yellow
+.box__title-contact
+  display: flex
+  align-items: center
+  gap: variables.$size-s
+.contact__title
+  color: variables.$color-yellow
+.contact__whitetext
+  font-size: variables.$size-m
+  line-height: 1.8
+  color: variables.$color-white
+.container__contact
+  margin-top: 5rem
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: auto
+  .contact__text
+    grid-row: 1 / 2
+    background-color: variables.$color-black
+    padding-block: variables.$size-m
+    padding-inline: variables.$size-s
+    border-top-left-radius: variables.$size-xxl
+    border-top-right-radius: variables.$size-xxl
+  .contact__form
+    grid-row: 2 / 3
+    background-color: variables.$color-yellow
+    border-bottom-left-radius: variables.$size-xxl
+    border-bottom-right-radius: variables.$size-xxl
+    padding-block: variables.$size-m
+    padding-inline: variables.$size-s
+  .input__contact
+    padding-inline: variables.$size-s
+    padding-block: 0.5rem
+    border-radius: variables.$size-xl
+    box-sizing: border-box
+    display: block
+    margin-top: variables.$size-s
+    width: 100%
+  .input__contact-email
+    display: block
+    box-sizing: border-box
+    margin-top: variables.$size-s
+  .input__contact-message
+    display: block
+    box-sizing: border-box
+    margin-top: variables.$size-s
+  .rrss__box
+    display: flex
+    justify-content: space-between
+    flex-direction: column-reverse
+    gap: variables.$size-xl
+    align-items: center
+    margin-top: variables.$size-m
+    .rrss
+      display: flex
+      justify-content: space-between
+      align-items: center
+      gap: variables.$size-xl
+
+    .rrss__link
+      background-color: variables.$color-black
+      padding: variables.$size-s
+      border-radius: variables.$size-m
+      transition: 0.5s
+      &:hover
+        transform: scale(1.05)
+.rrss__img
+  width: 2rem
+  height: 2rem
+.submit
+  font-size: variables.$size-m
+

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Portfolio Laura</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!--Normalizador-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!--responsive-->
+        <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+        <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+        <link rel="stylesheet" href="css/tablet.css"  media="all and (min-width: 600px) and (max-width: 1050px)">
+        <!--scroll-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!--tipografia-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Paytone+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="img/favicon.webp">
+        <link rel="apple-touch-icon" href="/static/img/apple-touch-icon/touch-icon-iphone.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/static/img/apple-touch-icon/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="/static/img/apple-touch-icon/touch-icon-ipad-retina.png">
+        <meta name="theme-color" content="#E5E5E5">
+        <meta name="author" content="Laura Qiwan Benítez">
+        <meta name="description" content="Welcome to my portfolio. I’m Laura, a junior designer specializing in web and graphic design. My goal is to transform concepts into captivating visual experiences, combining creativity and functionality to deliver unique digital solutions. Explore my projects and discover my innovative approach to design.">
+    </head>
+    <body>
+        <header class="header" id="inicio">
+            <div class="header__box">
+                <section class="logo">
+                    <h1 class="special__text">Qiwan</h1>
+                </section>
+                <section class="downloadcv">
+                    <div class="download__box">
+                        <a href="file/cv.pdf" class="link download__link" download="cv.pdf">
+                            <img src="img/download.svg" alt="download icon" class="img img__download">
+                            <p class="special__text download__text"><span class="no-mobile">Download </span>CV</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <section class="hero__img">
+                        <img src="img/profile1.png" alt="Portrait women" class="img img__profile">
+                    </section>
+                    <section class="hero__content">
+                        <p class="welcome">Welcome!</p>
+                        <h2 class="special__text hero__title">I'm Laura, graphic and web dessigner</h2>
+                        <div class="buttons">
+                            <a href="#webproyect" class="link button button-1">Web proyects</a>
+                            <a href="#graphic" class="link button button-2">Graphic proyects</a>
+                            <a href="#contactme" class="link button button-3">Contact</a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="web-desing">
+                <div class="container">
+                    <div class="circle"></div>
+                    <h3 class="section__title special__text web__desing-title">
+                        Web desing
+                    </h3>
+                    <p class="web__text">
+                        Web page creation using primarily <strong>HTML</strong> and <strong>CSS</strong>, with additional knowledge of WordPress. I design and develop attractive and functional websites, focusing on <strong>structure and visual style</strong> My skills in these languages ensure that sites are not only visually striking but also <strong>compatible with various devices and browsers</strong>.
+                    </p>
+                </div>
+                <section class="responsive">
+                    <hgroup class="responsive__box">
+                        <div class="container">
+                            <h4 class="section__subtitle responsive__title">Responsive desing</h4>
+                            <p class="responsive__title-text">Mobile,tablet and desktop adaptative</p>
+                        </div>
+                    </hgroup>
+                    <div class="yellow" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="container">
+                            <video src="img/responsive1.mp4" autoplay loop muted type="video/mp4" class="video video_responsive1"></video>
+                        </div>
+                    </div>
+                    <div class="dark_gray" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="container">
+                            <video src="img/responsive2.mp4" autoplay loop muted  type="video/mp4" class="video video_responsive2"></video>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="dinamic__desing">
+                <div class="container">
+                    <h4 class="section__subtitle dinamic__title">Dinamic Desing</h4>
+                    <section class="dinamic__content">
+                        <article class="dinamic__post1">
+                            <video src="img/dinamic1.mp4" autoplay loop muted type="video/mp4" class="video video_dinamic"></video>
+                            <p class="dinamic__text">Creation of animations using HTML and CSS.</p>
+                        </article>
+                        <article class="dinamic__post2">
+                            <video src="img/dinamic2.mp4" autoplay loop muted type="video/mp4" class="video video_dinamic"></video>
+                            <p class="dinamic__text">Carousel created using plugins in WordPress.</p>
+                        </article>
+                    </section>
+                </div>
+            </section>
+            <section class="web__proyects" id="webproyect">
+                <h4 class="section__subtitle special__text web__title">Web Projects</h4>
+                <div class="masonry">
+                    <img src="img/masonry1.png" alt="" class="masonry__item masonry-1 img">
+                    <img src="img/masonry2.png" alt="" class="masonry__item masonry-2 img">
+                    <video src="img/maronry3.mp4" class="video masonry-3" autoplay loop muted type="video/mp4"></video>
+                    <video src="img/masonry4.mp4" class="masonry__item video masonry-4" autoplay loop muted type="video/mp4"></video>
+                    <img src="img/masonry5.png" alt="" class="masonry__item masonry-5 img">
+                    <img src="img/masonry6.png" alt="" class="masonry__item masonry-6 img">
+                </div>
+            </section>
+            <section class="cta" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="container">
+                    <div class="cta__box">
+                        <p class="special__text cta__text">
+                            Do you like what you see? Click here to contact me and let's start working together!
+                        </p>
+                        <a href="#contactme" class="link button button__cta"><span class="cta__text-button">Get in touch</span></a>
+                    </div>
+                </div>
+            </section>
+            <section class="graphic__desing" id="graphic">
+                <div class="container">
+                    <div class="circle"></div>
+                    <h3 class="section__title  special__text graphic__title">Graphic desing</h3>
+                    <p class="graphic__text">Design creation using <strong>Adobe Photoshop</strong>, <strong>Adobe Illustrator</strong>, and <strong>Adobe InDesign</strong>. My experience with these tools allows me to develop striking graphics, custom logos, and professional print materials, ensuring high quality and precision in each project.</p>
+                </div>
+                <div class="masonry__graphic">
+                    <div class="graphic__item1">
+                        <img src="img/flat.jpg" alt="book cover nutcracker" class="img-graphic masonry__graphic-1 img">
+                        <div class="overlay">
+                            <p class="text__graphic-item1">Flat desing</p>
+                        </div>
+                    </div>
+                    <div class="graphic__item2">
+                        <img src="img/papeleria.jpg" alt="branding qiwan" class="img-graphic masonry__graphic-2 img">
+                        <div class="overlay">
+                            <p class="text__graphic-item2">Branding</p>
+                        </div>
+                    </div>
+                    <div class="graphic__item3">
+                        <img src="img/carteles.jpg" alt="post" class="img-graphic masonry__graphic-3 img">
+                        <div class="overlay">
+                            <p class="text__graphic-item3">Poster</p>
+                        </div>
+                    </div>
+                    <div class="graphic__item4">
+                        <img src="img/editorial.jpg" alt="editorial" class="img-graphic masonry__graphic-4 img">
+                        <div class="overlay">
+                            <p class="text__graphic-item4">Editorial</p>
+                        </div>
+                    </div>
+                    <div class="graphic__item5">
+                        <img src="img/portada-libro.jpg" alt="book cover" class="img-graphic masonry__graphic-5 img" style="height: 100%">
+                        <div class="overlay">
+                            <p class="text__graphic-item5">Book cover</p>
+                        </div>
+                    </div>
+                    <div class="graphic__item6">
+                        <img src="img/patata.jpg" alt="book cover nutcracker" class="img-graphic masonry__graphic6 img">
+                        <div class="overlay">
+                            <p class="text__graphic-item6">Packaging</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contactme">
+                    <div class="container__contact">
+                        <section class="contact__text">
+                            <div class="container">
+                                <div class="box__title-contact">
+                                    <div class="circle__contact"></div>
+                                    <h3 class="section__title  special__text contact__title">Contact Me</h3>
+                                </div>
+                                <p class="contact__whitetext">I’m Laura, a junior designer passionate about graphic and web design. Although I don’t have professional experience, I have developed solid skills through personal and academic projects. I’m seeking my first professional opportunity to apply my knowledge and grow in a collaborative environment. I’m ready to bring my creativity and dedication to your team.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="contact__form">
+                            <div class="form__box">
+                                <form action="https://formspree.io/f/xjkbopbp"
+                                      method="POST" class="form">
+                                    <div class="name__sur-box">
+                                        <label>
+                                            <input type="text" class="input__contact" style="margin-top: 0" placeholder="Name" required>
+                                        </label>
+                                        <label>
+                                            <input type="text" class="input__contact" placeholder="Surname" required>
+                                        </label>
+                                    </div>
+                                    <label>
+                                        <input type="text" class="input__contact input__contact-email"placeholder="Email" required name="email">
+                                    </label>
+                                    <label>
+                                        <textarea required name="message" class="input__contact input__contact-message" placeholder="Message " id="" cols="20" rows="10"></textarea>
+                                    </label>
+                                    <div class="rrss__box">
+                                        <section class="rrss">
+                                            <a href="https://www.linkedin.com/in/laura-ben%C3%ADtez-gonz%C3%A1lez-6672b3236/" class="link rrss__link" target="_blank" ><img src="img/linkedin-161-svgrepo-com.svg" alt="linkedin icon" class="img rrss__img"></a>
+                                            <a href="mailto:Lqiwanbenitez@gmail.com" target="_blank"  class="link rrss__link"><img src="img/mail-notification-svgrepo-com.svg" alt="mail icon" class="img rrss__img"></a>
+                                            <a href="tel:622417231" target="_blank" class="link rrss__link" ><img src="img/phone-svgrepo-com(1).svg" alt="phone icon" class="img rrss__img"></a>
+                                        </section>
+                                        <button  type="submit" class="button submit"> Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <a href="#inicio" class="link footer__link">
+                <img src="img/cheveron-up.svg" alt="up icon" class="img img__up">
+                <p class="special__text">Go back up</p>
+            </a>
+        </footer>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
+

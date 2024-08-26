@@ -1,0 +1,54 @@
+@use "variables"
+
+html
+  scroll-behavior: smooth
+body
+  font-family: variables.$font-text
+  margin: variables.$size-m
+  background-color: variables.$color-white
+.container
+  margin-inline: auto
+  max-width: 1100px
+  padding: 1rem
+.img
+  display: block
+  width: 100%
+  object-fit: cover
+  object-position: center
+.video
+  display: block
+  width: 100%
+  object-fit: cover
+  object-position: center
+.ul__reset
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  padding: 0
+  margin: 0
+.link
+  display: inline-block
+  color: inherit
+  text-decoration: none
+  padding: 1rem
+.special__text
+  font-family: variables.$font-title
+.button
+  font-size: variables.$size-l
+  color: variables.$color-black
+  padding-inline: variables.$size-xl
+  padding-block: variables.$size-s
+  background-color: variables.$color-yellow
+  border: 2.5px solid variables.$color-black
+  border-radius: variables.$size-xl
+  &:hover
+    color: variables.$color-yellow
+    background-color: variables.$color-black
+.section__title
+  font-size: 2.5rem
+  text-transform: uppercase
+  margin-block: variables.$size-s
+  font-family: variables.$font-title
+.section__subtitle
+  font-size: variables.$size-xl
+  font-family: variables.$font-title
